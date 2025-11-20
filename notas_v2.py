@@ -164,7 +164,7 @@ def calcular_notas(sexo, salto, flexiones, velocidad, mil, natacion, seis):
     return notas, media, nota_final
 
 # ===================== UI =====================
-st.title("📊 Evaluación Física — Dashboard Simple")
+st.title("📊 PRUEBAS FÍSICAS SSAA")
 st.markdown("---")
 
 sexo = st.radio("SEXO:", ["PITO", "PITA"])
@@ -205,3 +205,4 @@ st.markdown(f"**Nota Final (×0.9):** 🟩 {nota_final:.2f}")
 if st.button("📤 Exportar a Excel"):
     df.to_excel("resultados_fisicas.xlsx", index=False)
     st.success("Archivo 'resultados_fisicas.xlsx' guardado correctamente ✅")
+
